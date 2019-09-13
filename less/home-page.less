@@ -1,17 +1,18 @@
 // Home Content
 
 .home {
-
   .intro {
-
     h2 {
       padding: 15px;
     }
 
     p {
-      padding:0 15px;
+      padding: 0 15px;
     }
-  
+
+    img {
+      border-radius: 15px;
+    }
   }
 
   .space-images {
@@ -57,14 +58,30 @@
         margin-bottom: 26px;
       }
 
-      .btn {
+      .btn-container {
+        .flex-properties(flex-start, center);
+        .btn {
+          .btn-styles(@btn-bg-color, @sea-shell);
+          width: 30%;
+          text-align: center;
+          padding: 2%;
+          border-radius: 5px;
+          font-size: 2rem;
+          font-weight: bold;
+
+          &:hover {
+            background-color: @sea-shell;
+            color: @btn-bg-color;
+            cursor: pointer;
+          }
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
@@ -72,4 +89,4 @@
       }
     }
   }
-}// home
+} // home
