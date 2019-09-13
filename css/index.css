@@ -210,6 +210,7 @@ footer {
 }
 .home .intro p {
   padding: 0 15px;
+  margin-top: 3%;
 }
 .home .intro img {
   border-radius: 15px;
@@ -228,11 +229,15 @@ footer {
 @media (max-width: 500px) {
   .home .space-images img {
     width: 100%;
+    margin: 0;
+    padding: 2%;
   }
 }
 @media (max-width: 500px) {
   .home .space-images .sky,
-  .home .space-images .launch {
+  .home .space-images .launch,
+  .home .space-images .rocket-launch,
+  .home .space-images .space-rockets {
     display: none;
   }
 }
